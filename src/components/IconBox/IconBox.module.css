@@ -1,0 +1,32 @@
+.iconBox {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: var(--blue);
+  font-size: xx-large;
+  background: var(--glass-overlay);
+  box-shadow: var(--shadow-1);
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.infoBox {
+  margin: 15px;
+  display: inline-block;
+}
+
+.infoBox a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  text-align: start;
+  text-transform: uppercase;
+  color: var(--light-gray-70);
+}

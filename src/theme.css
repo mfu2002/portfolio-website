@@ -1,0 +1,28 @@
+:root {
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  --glass-overlay: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.02)
+  );
+  --smoky-black: hsl(0, 0%, 7%);
+  --jet: hsl(0, 0%, 22%);
+  --blue: rgb(43, 105, 204);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+
+  /* These cannot be used in media queries and are only here as guidelines. */
+  --xs-min: 0px;
+  --sm-min: 600px;
+  --md-min: 960px;
+  --lg-min: 1280px;
+  --xl-min: 1920px;
+}
