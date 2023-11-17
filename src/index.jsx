@@ -7,6 +7,7 @@ import About from "./routes/About";
 import Resume from "./routes/Resume";
 import Portfolio from "./routes/Portfolio";
 import Contact from "./routes/Contact";
+import DetailsCard from "./components/DetailsCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -14,10 +15,38 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <About /> },
-      // { path: "/Resume", element: <Resume /> },
-      // { path: "/Portfolio", element: <Portfolio /> },
-      // { path: "/Contact", element: <Contact /> },
+      {
+        path: "/",
+        element: (
+          <DetailsCard title="About Me">
+            <About />
+          </DetailsCard>
+        ),
+      },
+      {
+        path: "/Resume",
+        element: (
+          <DetailsCard title="Resume">
+            <Resume />
+          </DetailsCard>
+        ),
+      },
+      {
+        path: "/Portfolio",
+        element: (
+          <DetailsCard title="Portfolio">
+            <Portfolio />
+          </DetailsCard>
+        ),
+      },
+      {
+        path: "/Contact",
+        element: (
+          <DetailsCard title="Contact">
+            <Contact />
+          </DetailsCard>
+        ),
+      },
     ],
   },
 ]);

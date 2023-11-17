@@ -2,16 +2,23 @@
   display: flex;
   margin: 15px 12px;
   flex-direction: column;
+  row-gap: 10px;
 }
 
 @media screen and (min-width: 600px) {
   .mainWrapper {
     margin-top: 60px;
+    row-gap: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .mainWrapper {
     flex-direction: row;
+    column-gap: 40px;
+    align-items: start;
+  }
+  .mainWrapper > section:last-child {
+    flex-grow: 1;
   }
 }

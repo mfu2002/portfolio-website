@@ -1,0 +1,29 @@
+.BottomNavigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: hsla(240, 1%, 17%, 0.75);
+  width: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-2);
+  border-radius: 20px 20px 0 0;
+  z-index: 5;
+}
+
+.BottomNavigation ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.BottomNavigation ul li {
+  list-style-type: none;
+}
+
+.BottomNavigation a.active {
+  color: var(--blue-light);
+  font-size: x-large;
+}

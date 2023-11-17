@@ -1,8 +1,4 @@
 .profile {
-  padding: 30px;
-  background: var(--eerie-black-2);
-  border-radius: 20px;
-  border: 1px solid var(--jet);
   display: flex;
   flex-direction: column;
 }
@@ -22,6 +18,7 @@
 
 .profile hr {
   height: 1px;
+  width: 100%;
   background: var(--jet);
   border: none;
 }

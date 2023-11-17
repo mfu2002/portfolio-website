@@ -1,0 +1,19 @@
+.PortfolioItem {
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.PortfolioItem h3 {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.links > * {
+  padding: 5px;
+  margin: 2px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}

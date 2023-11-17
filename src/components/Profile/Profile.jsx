@@ -6,9 +6,9 @@ import EmailIcon from "@mui/icons-material/Email";
 import myAvatar from "./my-avatar.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-export default function Profile(props) {
+export default function Profile() {
   return (
-    <section className={classes.profile} {...props}>
+    <div className={classes.profile}>
       <div className={classes.header}>
         <figure>
           <img src={myAvatar} />
@@ -20,23 +20,29 @@ export default function Profile(props) {
       </div>
       <hr />
       <ul>
-        <IconBox
-          Icon={EmailIcon}
-          title="Email"
-          value="FaisalK02115@gmail.com"
-          anchor="mailto:FaisalK02115@gmail.com"
-        />
-        <IconBox
-          Icon={LocalPhoneIcon}
-          title="Phone"
-          value="0406043115"
-          anchor="tel:0406043115"
-        />
-        <IconBox
-          Icon={LocationOnIcon}
-          title="Location"
-          value="Hampton Park, VIC"
-        />
+        <li>
+          <IconBox
+            Icon={EmailIcon}
+            title="Email"
+            value="FaisalK02115@gmail.com"
+            anchor="mailto:FaisalK02115@gmail.com"
+          />
+        </li>
+        <li>
+          <IconBox
+            Icon={LocalPhoneIcon}
+            title="Phone"
+            value="0406043115"
+            anchor="tel:0406043115"
+          />
+        </li>
+        <li>
+          <IconBox
+            Icon={LocationOnIcon}
+            title="Location"
+            value="Hampton Park, VIC"
+          />
+        </li>
       </ul>
       <hr />
       <div className={classes.socialLinks}>
@@ -47,6 +53,6 @@ export default function Profile(props) {
           <LinkedInIcon />
         </a>
       </div>
-    </section>
+    </div>
   );
 }

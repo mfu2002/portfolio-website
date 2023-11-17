@@ -1,13 +1,16 @@
 import classes from "./IconBox.module.css";
 
 export default function IconBox({ Icon, title, value, anchor }) {
+  const ValueElement = anchor ? "a" : "p";
   return (
-    <li className={classes.iconBox}>
+    <div className={classes.iconBox}>
       <Icon className={classes.icon}></Icon>
-      <div className={classes.infoBox}>
-        <small className={classes.title}>{title}</small>
-        <a href={anchor}>{value}</a>
-      </div>
-    </li>
+      {title || value ? (
+        <div className={classes.infoBox}>
+          <small className={classes.title}>{title}</small>
+          <ValueElement href={anchor}>{value}</ValueElement>
+        </div>
+      ) : null}
+    </div>
   );
 }

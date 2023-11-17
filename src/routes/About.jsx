@@ -1,3 +1,3 @@
 export default function About() {
-  return <h1>About</h1>;
+  return <p>I am a hobbiest programmer in Melbourne, Australia. </p>;
 }
