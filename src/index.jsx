@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./routes/App/App";
 import About from "./routes/About";
 import Resume from "./routes/Resume";
-import Portfolio from "./routes/Portfolio";
+import Portfolio from "./routes/Portfolio/Portfolio";
 import Contact from "./routes/Contact";
 import DetailsCard from "./components/DetailsCard";
 

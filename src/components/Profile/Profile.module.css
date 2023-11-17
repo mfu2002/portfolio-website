@@ -16,7 +16,7 @@
   border-radius: 20px;
 }
 
-.profile hr {
+.divider {
   height: 1px;
   width: 100%;
   background: var(--jet);
@@ -45,6 +45,9 @@
   .socialLinks {
     flex-direction: column;
   }
+  .divider {
+    height: 0%;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -61,5 +64,8 @@
   }
   .socialLinks {
     flex-direction: row;
+  }
+  .divider {
+    height: 1px;
   }
 }

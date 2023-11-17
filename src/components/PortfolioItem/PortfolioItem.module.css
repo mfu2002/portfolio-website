@@ -2,11 +2,13 @@
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 20px;
+  margin: 15px;
 }
 
 .PortfolioItem h3 {
   margin: 0px;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 .links > * {
@@ -16,4 +18,8 @@
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+.PortfolioItem p {
+  margin: 0px;
 }

@@ -18,7 +18,7 @@ export default function Profile() {
           <p>Junior Developer</p>
         </div>
       </div>
-      <hr />
+      <hr className={classes.divider} />
       <ul>
         <li>
           <IconBox
@@ -44,7 +44,7 @@ export default function Profile() {
           />
         </li>
       </ul>
-      <hr />
+      <hr className={classes.divider} />
       <div className={classes.socialLinks}>
         <a href="https://github.com/mfu2002">
           <GitHubIcon />

@@ -1,0 +1,42 @@
+.PortfolioSearch{
+    border-radius: 10px;
+    border: 1px solid var(--jet);
+    display: flex;
+    align-items: center;
+}
+.PortfolioSearch input {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    flex: 1;
+    color: var(--white-2)
+}
+
+.PortfolioSearch input:focus {
+    outline: none;
+}
+.PortfolioSearch:focus-within {
+    outline: solid;
+
+}
+.searchIcon {
+    padding: 10px;
+}
+.notFoundMessage {
+    padding-top: 20px;
+}
+.sortContainer {
+    display: flex;
+    justify-content: end;
+}
+.sortContainer div {
+    padding: 7px;
+    border: 1px solid var(--jet);
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.sortContainer *.active {
+    background: var(--bg-gradient-onyx);
+
+}

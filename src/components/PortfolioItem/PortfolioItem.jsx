@@ -9,7 +9,7 @@ export default function PortfolioItem({ item }) {
         <h3>{item.title}</h3>
         <div className={classes.links}>
           {item.urls.map((url) => (
-            <Link key={url} id={url} to={url}>
+            <Link key={url} id={url} to={url} target="_blank">
               {url.toLowerCase().includes("github.com") ? (
                 <GitHubIcon />
               ) : (
