@@ -39,10 +39,9 @@ const PROJECTS = [
 ];
 export default function Portfolio(props) {
   const [searchString, setSearchString] = useState("");
-  const [selectedSort, setSelectedSort] = useState(0);
+  const [selectedSort, setSelectedSort] = useState(1);
   const [selectedSortDirection, setSelectedSortDirection] = useState(1);
   const projects = [...PROJECTS].filter(function (item) {
-    console.log(item.title);
     if (item.title.toLowerCase().includes(searchString.toLowerCase())) {
       return true;
     }
@@ -62,7 +61,6 @@ export default function Portfolio(props) {
     }
     return 0
   });
-  console.log(selectedSortDirection)
   return (
     <>
       <div className={classes.PortfolioSearch}>
@@ -79,8 +77,8 @@ export default function Portfolio(props) {
         <div onClick={()=> setSelectedSort(2)} className={selectedSort === 2 ? classes.active : null}>
           Alphabetical
         </div>
-        <div onClick={setSelectedSortDirection((direction) => direction * -1)} >
-          {selectedSortDirection ? 'down' : 'up'}
+        <div onClick={()=> setSelectedSortDirection((direction) => direction * -1)} >
+          {selectedSortDirection === 1 ? '↓' : '↑'}
         </div>
       </div>
       <div>
