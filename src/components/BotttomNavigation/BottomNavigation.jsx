@@ -28,14 +28,6 @@ export default function BottomNavigation() {
             Portfolio
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? classes.active : "")}
-            to="/Contact"
-          >
-            Contact
-          </NavLink>
-        </li>
       </ul>
     </nav>
   );
