@@ -11,7 +11,7 @@ import DetailsCard from "./components/DetailsCard/DetailsCard";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
-    path: "*",
+    path: "/",
     element: <App />,
     children: [
       {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "*",
+        path: "/",
         element: (
           <DetailsCard title="About Me">
             <About />
