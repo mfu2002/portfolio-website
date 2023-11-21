@@ -3,7 +3,7 @@ import classes from "./App.module.css";
 import { Outlet } from "react-router-dom";
 import Profile from "../../components/Profile/Profile";
 import SectionCard from "../../components/SectionCard/SectionCard";
-import BottomNavigation from "../../components/BotttomNavigation/BottomNavigation";
+import BottomNavigation from "../../components/Navigation/Navigation";
 export default function App() {
   return (
     <>
@@ -15,7 +15,7 @@ export default function App() {
           <Outlet />
         </SectionCard>
       </main>
-      <BottomNavigation />
+      <BottomNavigation className={classes.bottomNavigation} />
     </>
   );
 }

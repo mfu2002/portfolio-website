@@ -38,5 +38,11 @@
 
 .sortContainer *.active {
     background: var(--bg-gradient-onyx);
+}
 
+.portfolioItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
 }

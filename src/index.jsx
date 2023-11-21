@@ -6,7 +6,7 @@ import App from "./routes/App/App";
 import About from "./routes/About";
 import Resume from "./routes/Resume";
 import Portfolio from "./routes/Portfolio/Portfolio";
-import DetailsCard from "./components/DetailsCard";
+import DetailsCard from "./components/DetailsCard/DetailsCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([

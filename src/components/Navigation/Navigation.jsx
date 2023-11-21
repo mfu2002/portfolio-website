@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
-import classes from "./BotttomNavigation.module.css";
-export default function BottomNavigation() {
+import classes from "./Navigation.module.css";
+export default function BottomNavigation(props) {
+
   return (
-    <nav className={classes.BottomNavigation}>
+    <nav className={props.className + ' ' + classes.navigation}>
       <ul>
         <li>
           <NavLink

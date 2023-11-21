@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topNavigation {
+    display: none;
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: var(--bg-gradient-onyx);
+    border-radius: 0px 20px 0 20px;
+    padding: 0px 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .topNavigation {
+      display: block;
+    }
+  }

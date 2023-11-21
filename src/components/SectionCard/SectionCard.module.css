@@ -3,4 +3,6 @@
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
+  position: relative;
+  /* overflow: hidden; */
 }

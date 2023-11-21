@@ -23,3 +23,9 @@
 .PortfolioItem p {
   margin: 0px;
 }
+
+@media screen and (min-width: 960px) {
+  .PortfolioItem {
+    width: 300px;
+  }
+}
