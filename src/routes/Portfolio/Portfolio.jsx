@@ -10,8 +10,8 @@ const PROJECTS = [
       "https://github.com/mfu2002/portfolio-website",
       "https://www.faisal-karim.com/",
     ],
-    "This is my portfolio website. The code behind the website you are currently looking at. I made the website in React.js and is hosted on Firebase.",
-    ["React", "Website", "Javascript"],
+    "This is my portfolio website. The code behind the website you are currently looking at. I made the website in React.js and is hosted on GitHub Pages.",
+    ["React", "Website", "Javascript", "Web development", "Github Pages", "CSS", "Portfolio"],
     new Date(2023, 10, 17)
   ),
   new ProjectInfo(
