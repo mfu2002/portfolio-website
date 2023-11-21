@@ -11,17 +11,9 @@ import DetailsCard from "./components/DetailsCard/DetailsCard";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <App />,
     children: [
-      {
-        path: "/",
-        element: (
-          <DetailsCard title="About Me">
-            <About />
-          </DetailsCard>
-        ),
-      },
       {
         path: "/Resume",
         element: (
@@ -35,6 +27,14 @@ const router = createBrowserRouter([
         element: (
           <DetailsCard title="Portfolio">
             <Portfolio />
+          </DetailsCard>
+        ),
+      },
+      {
+        path: "*",
+        element: (
+          <DetailsCard title="About Me">
+            <About />
           </DetailsCard>
         ),
       },
